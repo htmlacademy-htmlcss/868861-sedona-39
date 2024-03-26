@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
 </head>
 
 <body>
@@ -76,8 +76,7 @@
               <h3>Настоящий городок</h3>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="images/advantages/photo-1.jpg" width="800" height="385"
-              alt="Дома">
+            <img src="images/advantages/photo-1.jpg" width="800" height="385" alt="Дома">
           </li>
           <li class="main-advantages-item">
             <div class="item-advantages-text-wrap">
@@ -106,7 +105,7 @@
           </li>
         </ul>
 
-        <div class="subtitle-come-wrap">
+        <div class="subtitle-welcome-wrap" data-test="service"data-test="service">
           <h2 class="subtitle subtitle-down">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="main-advantages-text text-subtitle">Опытный персонал и качественное обслуживание!</p>
         </div>
@@ -190,10 +189,10 @@
       </a>
     </footer>
   </div>
-  <div class="modal-container">
+  <div class="modal-container" data-test="modal">
     <div class="modal modal-search">
       <button class="modal-close-button" type="button">
-        <span class="visually-hidden">Закрыть окно поиска гостиницы.</span>
+        <span class="visually-hidden">Закрыть окно поиска гостиницы</span>
       </button>
       <section class="modal-content">
         <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
@@ -201,23 +200,23 @@
           <label class="modal-label" for="input-date-in">Дата Заезда:</label>
           <div class="input-date-label">
             <input class="modal-input modal-input-date" id="input-date-in" aria-label="Укажите дату заезда в гостиницу"
-              name="modal-input-date-in" type="text" maxlength="30" placeholder="Укажите дату" required>
-            <button class="button-calendar" type="button"></button>
+              name="modal-input-date-in" type="text" maxlength="30" placeholder="Укажите дату" value="27 апреля 2020" required>
+            <button class="button-calendar" type="button"><span class="visually-hidden">Кнопка календаря</span></button>
           </div>
           <span class="input-tooltip input-tooltip-error">Мы не можем отправить вас в прошлое</span>
           <label class="modal-label" for="input-date-out">Дата Выезда:</label>
           <div class="input-date-label">
             <input class="modal-input modal-input-date" id="input-date-out"
               aria-label="Укажите дату выезда из гостиницы" name="modal-input-date-out" type="text" maxlength="30"
-              placeholder="Укажите дату" required>
-            <button class="button-calendar" type="button"></button>
+              placeholder="Укажите дату" value="1 сентября 2023" required>
+            <button class="button-calendar" type="button"><span class="visually-hidden">Кнопка календаря</span></button>
           </div>
           <span class="input-tooltip input-tooltip-succes">На эти даты есть свободные номера. Пока есть.</span>
           <label class="modal-label" for="input-age-old">Взрослые:</label>
           <div class="modal-wrap-age">
             <div class="input-age-label">
               <div class="button-wrap">
-                <button class="button-modal-input button-modal-minus" aria-label="Добавить количество взрослых"
+                <button class="button-modal-input button-modal-minus" aria-label="Убавить количество взрослых"
                   type="button"></button>
               </div>
               <input class="modal-input modal-input-age" id="input-age-old"
@@ -239,13 +238,13 @@
               </div>
               <div class="input-age-label">
                 <div class="button-wrap">
-                  <button class="button-modal-input button-modal-minus" aria-label="Добавить количество взрослых"
+                  <button class="button-modal-input button-modal-minus" aria-label="Убавить количество детей"
                     type="button"></button>
                 </div>
                 <input class="modal-input modal-input-age" id="input-age-chldren" aria-label="Укажите количество детей"
                   type="number" value="2">
                 <div class="button-wrap">
-                  <button class="button-modal-input button-modal-plus" aria-label="Добавить количество взрослых"
+                  <button class="button-modal-input button-modal-plus" aria-label="Добавить количество детей"
                     type="button"></button>
                 </div>
               </div>
