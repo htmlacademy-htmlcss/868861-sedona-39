@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" type="image/png" href="images/favicon.png"> <!-- 32×32 -->
 </head>
 
 <body>
@@ -105,7 +105,7 @@
           </li>
         </ul>
 
-        <div class="subtitle-welcome-wrap" data-test="service"data-test="service">
+        <div class="subtitle-welcome-wrap" data-test="service">
           <h2 class="subtitle subtitle-down">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="main-advantages-text text-subtitle">Опытный персонал и качественное обслуживание!</p>
         </div>
@@ -195,12 +195,13 @@
         <span class="visually-hidden">Закрыть окно поиска гостиницы</span>
       </button>
       <section class="modal-content">
-        <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="modal-label" for="input-date-in">Дата Заезда:</label>
           <div class="input-date-label">
             <input class="modal-input modal-input-date" id="input-date-in" aria-label="Укажите дату заезда в гостиницу"
-              name="modal-input-date-in" type="text" maxlength="30" placeholder="Укажите дату" value="27 апреля 2020" required>
+              name="modal-input-date-in" type="text" maxlength="30" placeholder="Укажите дату" value="27 апреля 2020"
+              required>
             <button class="button-calendar" type="button"><span class="visually-hidden">Кнопка календаря</span></button>
           </div>
           <span class="input-tooltip input-tooltip-error">Мы не можем отправить вас в прошлое</span>
