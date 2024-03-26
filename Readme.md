@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Фисенко](https://up.htmlacademy.ru/htmlcss/39/user/868861).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Мой проект Седона](https://ofa2008.github.io/868861-sedona-39/).
 
 ---
 
