@@ -455,6 +455,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .search .search-description {
@@ -1310,6 +1311,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 20px;
+  color: #000000;
 }
 
 .subscribe p {
