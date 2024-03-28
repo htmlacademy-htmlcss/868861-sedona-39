@@ -539,6 +539,10 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.main-follow-email:not(:disabled):hover {
+  background-color: #e6e6e6;
+}
+
 .follow-button {
   background-color: #82b3d3;
   border: none;
@@ -561,6 +565,11 @@ body {
 .follow-button:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.follow-button:disabled {
+  background-color: #e5e5e5;
+  cursor: auto;
 }
 
 .footer {
@@ -600,7 +609,7 @@ body {
 }
 
 .social-link:active .social-link-svg {
-  color: rgba(104, 162, 202, 0.3);
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .phone {
@@ -664,11 +673,11 @@ body {
   margin-bottom: 40px;
 }
 
-.filters-item:hover {
+.filters-item.home:hover {
   opacity: 0.6;
 }
 
-.filters-item:active {
+.filters-item.home:active {
   opacity: 0.3;
 }
 
@@ -781,6 +790,19 @@ body {
   border-radius: 5px;
   cursor: pointer;
   border: none;
+  background-color: #ffffff;
+}
+
+.range-bar button:focus-visible {
+  outline: #83b3d3 3px solid;
+}
+
+.range-bar button:active {
+  outline: #83b3d3 2px solid;
+}
+
+.range-bar button:disabled {
+  pointer-events: none;
 }
 
 .range-bar button:first-child {
@@ -1041,6 +1063,7 @@ body {
   background-image: url("../images/arrow-down.svg");
   background-position: right 20px center;
   background-repeat: no-repeat;
+  background-color: #ffffff;
   border: solid 2px #e5e5e5;
 }
 
@@ -1123,12 +1146,22 @@ body {
 }
 
 .catalog-list {
+  position: relative;
   list-style: none;
   padding-left: 0;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.catalog-list::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  bottom: -40px;
 }
 
 .catalog-item {
@@ -1519,7 +1552,7 @@ body {
   position: absolute;
   width: 21px;
   height: 20px;
-  background-image: url("../images/modal/modal-calendar.svg");
+  background-image: url("../images/modal-calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
